@@ -42,7 +42,7 @@ namespace Mobile
             info.AppendLine("Information about the phone:");
             info.AppendLine("Manufacturer - " + this.gsmManufacturer);
             info.AppendLine("Model - " + this.gsmModel);
-            info.AppendLine("Price - " + this.gsmPrice);
+            info.AppendLine("Price - " + this.gsmPrice + "$");
             info.Append("Owner - " + this.gsmOwner);
             return info.ToString();
         }
@@ -127,7 +127,7 @@ namespace Mobile
         {
             get
             {
-                return new GSM("4S", "Apple");
+                return new GSM("IPhone4S", "Apple", 1000, "Jobs");
             }
         }
 

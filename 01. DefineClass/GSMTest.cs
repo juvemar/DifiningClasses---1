@@ -12,10 +12,10 @@ namespace Mobile
         public void DisplayGSMs()
         {
             List<GSM> phone = new List<GSM>();
-            for (int i = 1; i < 7; i++)
+            for (int i = 0; i < 6; i++)
             {
                 Owners possessor = (Owners)i;
-                phone.Add(new GSM("C35", "Siemens", 100, possessor.ToString()));
+                phone.Add(new GSM("C35", "Siemens", 100 + i, possessor.ToString()));
             }
             foreach (var gsm in phone)
             {
